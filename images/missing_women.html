@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    .error {
+        color: red;
+    }
+  </style>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega@5"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-lite@4.17.0"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm//vega-embed@6"></script>
+</head>
+<body>
+  <div id="vis"></div>
+  <script>
+    (function(vegaEmbed) {
+      var spec = {"config": {"view": {"continuousWidth": 400, "continuousHeight": 300}}, "hconcat": [{"mark": {"type": "line", "point": true, "strokeWidth": 5}, "encoding": {"color": {"condition": {"field": "Country_2", "legend": {"title": "Country"}, "scale": {"scheme": "accent"}, "type": "nominal", "selection": "selector003"}, "value": "lightgray"}, "size": {"condition": {"value": 3, "selection": {"not": "selector003"}}, "value": 5}, "x": {"field": "Year_with_next_five_years", "title": "Year", "type": "temporal"}, "y": {"field": "Missing_female_births", "scale": {"domain": [0, 1800000]}, "title": "Missing Female Births (per year)", "type": "quantitative"}}, "height": 250, "selection": {"selector003": {"type": "single", "empty": "all", "on": "mouseover", "fields": ["Country_2"]}}, "width": 250}, {"mark": "line", "encoding": {"color": {"condition": {"field": "Country_2", "legend": {"title": "Country"}, "scale": {"scheme": "accent"}, "type": "nominal", "selection": "selector003"}, "value": "lightgray"}, "size": {"condition": {"value": 3, "selection": {"not": "selector003"}}, "value": 5}, "x": {"field": "Year_with_next_five_years", "title": "Year", "type": "temporal"}, "y": {"field": "Excess_female_deaths", "scale": {"domain": [0, 1800000]}, "title": "Excess Female Deaths (per year)", "type": "quantitative"}}, "height": 250, "selection": {"selector003": {"type": "single", "empty": "all", "on": "mouseover", "fields": ["Country_2"]}}, "transform": [{"filter": {"selection": "selector003"}}], "width": 250}], "data": {"name": "data-4c6aa13baf2098356874c33c884df5b4"}, "title": {"text": ["Annual Number Of Missing Female Births And Excess Mortality", "", ""], "color": "black", "fontSize": 16, "anchor": "middle"}, "$schema": "https://vega.github.io/schema/vega-lite/v4.17.0.json", "datasets": {"data-4c6aa13baf2098356874c33c884df5b4": [{"Country_2": "China", "Year_with_next_five_years": "1980-01-01T00:00:00", "Child_Sex_Ratio": 1.062, "Missing_female_births": 0, "Excess_female_deaths": 162292}, {"Country_2": "China", "Year_with_next_five_years": "1990-01-01T00:00:00", "Child_Sex_Ratio": 1.083, "Missing_female_births": 642757, "Excess_female_deaths": 182901}, {"Country_2": "China", "Year_with_next_five_years": "2000-01-01T00:00:00", "Child_Sex_Ratio": 1.135, "Missing_female_births": 1311192, "Excess_female_deaths": 99404}, {"Country_2": "China", "Year_with_next_five_years": "2010-01-01T00:00:00", "Child_Sex_Ratio": 1.168, "Missing_female_births": 1790222, "Excess_female_deaths": 59121}, {"Country_2": "India", "Year_with_next_five_years": "1980-01-01T00:00:00", "Child_Sex_Ratio": 1.072, "Missing_female_births": 0, "Excess_female_deaths": 1664534}, {"Country_2": "India", "Year_with_next_five_years": "1990-01-01T00:00:00", "Child_Sex_Ratio": 1.083, "Missing_female_births": 319497, "Excess_female_deaths": 1716743}, {"Country_2": "India", "Year_with_next_five_years": "2000-01-01T00:00:00", "Child_Sex_Ratio": 1.111, "Missing_female_births": 1253772, "Excess_female_deaths": 151176}, {"Country_2": "India", "Year_with_next_five_years": "2010-01-01T00:00:00", "Child_Sex_Ratio": 1.114, "Missing_female_births": 1536338, "Excess_female_deaths": 857376}, {"Country_2": "Other Country", "Year_with_next_five_years": "1980-01-01T00:00:00", "Child_Sex_Ratio": 14.595999999999998, "Missing_female_births": -735, "Excess_female_deaths": 294911}, {"Country_2": "Other Country", "Year_with_next_five_years": "1990-01-01T00:00:00", "Child_Sex_Ratio": 14.677, "Missing_female_births": 47579, "Excess_female_deaths": 256689}, {"Country_2": "Other Country", "Year_with_next_five_years": "2000-01-01T00:00:00", "Child_Sex_Ratio": 14.930000000000001, "Missing_female_births": 150456, "Excess_female_deaths": 281864}, {"Country_2": "Other Country", "Year_with_next_five_years": "2010-01-01T00:00:00", "Child_Sex_Ratio": 15.021999999999998, "Missing_female_births": 271183, "Excess_female_deaths": 277255}]}};
+      var embedOpt = {"mode": "vega-lite"};
+
+      function showError(el, error){
+          el.innerHTML = ('<div class="error" style="color:red;">'
+                          + '<p>JavaScript Error: ' + error.message + '</p>'
+                          + "<p>This usually means there's a typo in your chart specification. "
+                          + "See the javascript console for the full traceback.</p>"
+                          + '</div>');
+          throw error;
+      }
+      const el = document.getElementById('vis');
+      vegaEmbed("#vis", spec, embedOpt)
+        .catch(error => showError(el, error));
+    })(vegaEmbed);
+
+  </script>
+</body>
+</html>

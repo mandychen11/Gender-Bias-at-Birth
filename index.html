@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>ANLY 503 Data Visualization - Gender Bias Even at Birth</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<link href="https://fonts.loli.net/css?family=Lato:100,300,400,700,900" rel="stylesheet">
+<link href="https://fonts.loli.net/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
+<link rel="stylesheet" href="css/open-iconic-bootstrap.min.css">
+<link rel="stylesheet" href="css/animate.css">
+<link rel="stylesheet" href="css/owl.carousel.min.css">
+<link rel="stylesheet" href="css/owl.theme.default.min.css">
+<link rel="stylesheet" href="css/magnific-popup.css">
+<link rel="stylesheet" href="css/aos.css">
+<link rel="stylesheet" href="css/ionicons.min.css">
+<link rel="stylesheet" href="css/bootstrap-datepicker.css">
+<link rel="stylesheet" href="css/jquery.timepicker.css">
+<link rel="stylesheet" href="css/flaticon.css">
+<link rel="stylesheet" href="css/icomoon.css">
+<link rel="stylesheet" href="css/style.css">  
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-dark ftco_navbar bg-dark ftco-navbar-light" id="ftco-navbar">
+<div class="container">
+<a class="navbar-brand" href="index.html">HOME</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
+<span class="oi oi-menu"></span> Menu</button>
+	<div class="collapse navbar-collapse" id="ftco-nav">
+<ul class="navbar-nav ml-auto">
+	<li class="nav-item"><a href="#Abstract" class="nav-link">Abstract</a></li>
+<li class="nav-item"><a href="#Intro" class="nav-link">Intro</a></li>
+	<li class="nav-item"><a href="#data" class="nav-link">Data & Code</a></li>
+<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#method" id="dropdown04" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" >Method</a>
+<div class="dropdown-menu" aria-labelledby="dropdown04">
+<a class="dropdown-item" href="#method-pop">Population & Sex Ratio</a>
+<a class="dropdown-item" href="#method-mor">Mortality Rate</a>
+	<a class="dropdown-item" href="#method-miss">Missing Female</a>
+</div>
+</li>
+
+	<li class="nav-item dropdown">
+<a class="nav-link dropdown-toggle" href="#viz" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">VIZ</a>
+<div class="dropdown-menu" aria-labelledby="dropdown04">
+<a class="dropdown-item" href="#viz-pop">Population & Sex Ratio</a>
+<a class="dropdown-item" href="#viz-mor">Mortality Rate</a>
+	<a class="dropdown-item" href="#viz-miss">Missing Female</a>
+</div>
+</li>
+	
+	
+<li class="nav-item"><a href="#con" class="nav-link">Conclusion</a></li>
+
+</ul>
+</div>
+</div>
+</nav>
+	
+
+
+<ul class="navbar-nav ml-auto">
+
+<li class="nav-item dropdown">
+</li>
+</ul>
+
+
+
+<div class="hero-wrap js-fullheight" style="background-image: url('images/head4.jpg');">
+<div class="container">
+<div class="row no-gutters slider-text js-fullheight align-items-center justify-content-center">
+<h3 class="v">ANLY 503 - project portfolio</h3>
+<h3 class="vr">Prenatal Sex Selection, Infant Mortality and Human Trafficking</h3>
+	
+<div class="col-md-11 ftco-animate text-center">
+	<div style="font-size:85px"><strong>Gender Bias Even at Birth</strong></div> 
+	<br><br>
+<h2><span><strong>Group 28: Shiwei Yu, Yiqun Chen, Xiaomeng Chen</strong></span></h2>
+</div>
+<div class="mouse">
+<a href="#" class="mouse-icon">
+<div class="mouse-wheel"><span class="ion-ios-arrow-down"></span></div>
+</a>
+</div>
+</div>
+</div>
+</div>
+	
+<div class="goto-here"></div>
+<section class="ftco-section ftco-product">
+<div class="container">
+<div class="row justify-content-center mb-3 pb-3">
+<div class="col-md-12 heading-section text-center ftco-animate">
+	
+<h1 class="big">Abstract</h1>
+<a id="Abstract"><h2 class="mb-4">Abstract</h2></a>
+	<br><br>
+	<p align="left"><font size="4">Starting from demographics, do women face severe gender bias even from birth? What kind of infant mortality inequality are women facing in terms of the developed level of the country? How many women are disappearing silently in the corner we cannot see? This research explores macroscopically by surveying, summarizing, and visualizing, unearths country- and continent-level data, and conducts classification discussions. And combined with the previous research results, it focuses on gender inequality in some regions. This study shows that the sex ratio (110:100) in China and India is significantly higher than the normal level in the rest of the world, with severe prenatal and postnatal gender bias. The gender structure of India's population demonstrates extremely abnormal gender disparities. The majority of trafficked persons are women, and correspondingly, sexual exploitation accounts for a disproportionate share of human trafficking, especially in the Americas. We conclude by highlighting that gender bias has had extremely bad effects in countries around the world, and this will be a huge challenge that people will face.
+		<br><br>Key Words: population, gender, children sex ratio,  sex ratio at birth, mortality,  prenatal sex selection, trafficking.
+</font> </p><br><br>
+	<hr style="FILTER: progid:DXImageTransform.Microsoft.Shadow(color:#987cb9,direction:145,strength:15)" width="80%" color="#987cb9" SIZE="1">
+</div>
+</div>
+</div>
+
+	
+	
+</section>
+	
+	
+	<div class="goto-here"></div>
+<section class="ftco-section ftco-product">
+<div class="container">
+<div class="row justify-content-center mb-3 pb-3">
+<div class="col-md-12 heading-section text-center ftco-animate">
+<h1 class="big">Introduction</h1>
+<a id="Intro"><h2 class="mb-4">Introduction</h2></a>
+	
+	<br><br>
+	<p align="left"><font size="4">While human societies have made huge progress on female education and women’s rights, gender inequality is still common across the world. In many countries, girls have higher survival disadvantages than boys: many families use antenatal sex screening to choose boys, numerous female fetuses being killed through sex-selective abortions(Abbasi, 2021), Although "women are the life-expectancy champions: They can expect to live longer than men almost anywhere in the world today" (Zarulli et al, 2018). One of the long-term consequences of gender discrimination is that the sex ratio becomes wildly out of whack, and a chain of dreadful influences followed. When women have become scarce, the possibility of being subjected to violence or being trafficked will skyrocket. Other consequences include social instability and labor market distortions.
+</font> </p>
+
+		<p align="left"><font size="4">It is necessary for the public to realize the present situation of gender inequality and the serious consequences it will bring to our societies. This project builds a data visualization that allows people to visually explore the present situation of gender inequality in different countries and regions, especially in terms of population and mortality.
+</font></p>
+			
+			<p align="left"><font size="4">Our project will first explore sex ratios at birth and sex ratios in children at age five to find out which regions have more prenatal and postnatal sex selection. We'll dive into some typical countries to see how their infant mortality rates and numbers of missing women have changed over time for excess women. We then focused on women in human trafficking to gain a better understanding of the inequalities women experience.</font>
+</p>
+</div>
+</div>
+</div>
+
+</section>
+	
+
+	
+	
+	
+	
+
+<section class="ftco-section bg-light">
+<div class="container">
+<div class="row justify-content-center mb-3 pb-3">
+<div class="col-md-12 heading-section text-center ftco-animate">
+<h1 class="big">Data & Code</h1>
+<a id="data"><h2 class="mb-4">Data & Code</h2></a>
+	<br><br>
+	<h4 align="left">- Data(click to download)</h4>
+<p align="left">1. <a href="data-code/World_Pop_By_Sex.csv">World population</a> from <a href="https://population.un.org/wpp/Download/Standard/Population/">UN</a> <br>
+	2. <a href="data-code/sex-ratio-at-birth-vs-five-years-old.csv">Sex ratio at birth</a> and <a href="data-code/sex-ratio-at-five-years-old.csv">sex ratio at 5 years</a> old from UN<br>
+	3. <a href="data-code/infant_mortality.csv">Infant mortality rate</a>, <a href="data-code/Income_group.csv">income</a> and <a href="data-code/GDP_Per_Capita.csv">GDP</a> from <a href="https://www.who.int/data/maternal-newborn-child-adolescent-ageing/indicator-explorer-new/mca/infant-mortality-rate-(per-1000-live-births">WHO</a> <br>
+	4. <a href="data-code/missing-female.csv">Missing Female</a> from <a href="https://doi.org/10.1080/00324728.2018.1442583">artical by Kashyap </a> <br>
+	5. <a href="https://www.ctdatacollaborative.org/sites/default/files/The%20Global%20Dataset%2014%20Apr%202020.csv">Trafficking human age group from CTDC </a> <br>
+	 6. <a href="https://www.unodc.org/unodc/data-and-analysis/glotip.html">Detected victims of trafficking persons by UN</a><br></p>
+	
+	<h4 align="left">- Code(click to download)</h4>
+<p align="left">1. <a href="data-code/population.R">World population</a> <br>
+	2. <a href="data-code/Sex-ratio-at five-years-old-Number-of-male-per-100-females.py">Sex ratio map</a> <br>
+	3. <a href="data-code/sexratio_scatter_animation_code.py">compared Sex ratio </a>	<br>
+	4. <a href="data-code/lollipop_plot.R">mortality </a> <br>
+	5. <a href="data-code/missing_women_code.py">Missing female </a> <br>
+	 6. <a href="data-code/trafficking-humen-distribution.py"> Trafficking human distribution</a><br>
+	 7. <a href="data-code/sunburst.R">Trafficking Human(sunburst) </a><br>
+	8. <a href="data-code/sex_ratio_cleaning.R">Data clean</a></p>
+	
+
+</div>
+</div>
+</div>
+</section>
+	
+	
+	<div class="goto-here"></div>
+<section class="ftco-section ftco-product">
+<div class="container">
+<div class="row justify-content-center mb-3 pb-3">
+<div class="col-md-12 heading-section text-center ftco-animate">
+<a id="method"><h1 class="big">Method</h1></a>
+<h2 class="mb-4">Method</h2>
+	<br><br>
+	<a id="method-pop"><h3 align="left">World Population</h3></a>
+	<p align="left"><font size="4">The United Nations Population Division has provided comprehensive datasets about world population by subregion and region from 1950 to 2020. For this project, we extracted every five-year value from 1990 to 2020 by region level. In order to clearly demonstrate their increasing trend, the line is better applied as shown in Figure-1 and the number value is listed in the line by year in millions. Year information is listed on the top and each line with different colors denotes each continent with labels listed on the side. According to Prof. Marck’s suggestion, we used continent data instead of sub-continents since there are less variables showing in the graph and therefore more clear to convey the population trend.<br><br>
+		</font> </p>
+<h3 align="left">Sex Ratio</h3>
+<p align="left"><font size="4">
+As William said "The average natural expected sex ratio at birth is 105 males for every 100 females, with a normal spread of 103 to 107 male births to every 100 female births."(Reville, 2021) And we chose the sex ratio of 5 years old in Figure 2 below, that is, the sex ratio of children, because Janaína et al mentioned in their article "...the fact that boys are more likely to die, and the levels of overall under-5 mortality. Survival advantage of girls is more evident when overall mortality is low."(Costa, da Silva & Victora, 2017) Because of this, we also compare the two in Figure 3 to explore precisely.<br>
+	And in this interactive animation map, we can see the sex ratios of children in the world and the changes in the sex ratios of countries in the world from 1950 to 2014 through the shades of colors, which leads to our research focus - Gender Bias.<br><br>
+	The sex ratio is measured as the number of males per 100 females. In Figure-3 below we create an animated scatter plot showing the sex ratio at birth vs. at five-year-old across different countries from 1960 to 2015. The Y-axis has the sex ratio at five-year-old, and the X-axis has the sex ratio at birth. These two variables came from two different datasets provided by The World Bank, we merged them based on country names and years. At first, we planned to create a static scatter plot for each year. But the dataset contains the sex ratio between 1960 and 2015, we decided to find another way that can present the information more efficiently. Compared with proposal and Mid, we have improved the distribution of colors, so the color bar on the right will not change with the time series, which can make it easier for readers to receive the meaning we want to express.<br>
+We then animate the scatter plot which allows users to better perceive the change of sex ratios in each country over time, by applying the time series column (Year) to the scatter chart’s Play Axis field. This animated plot is a useful tool for data storytelling which can help us communicate the story we want to tell. Instead of specifying a single color for all points, we color each point(country) in the scatter plot and set marker symbol shapes by continent. We think this way the plot can display more information and make it easier for users to identify each continent. Plotly automatically creates a legend and places it on the right side of the plot to identify the continents. The raw dataset does not have a continent variable, so we collect data from The World Bank which provides a list of countries by continent, and then combine it with the original sex ratio dataset. The individual axis labels and the main title are highlighted in bold. The subtitle is used to explain the definition of sex ratio and help users understand the chart. We set autosize=False and the aspect ratio to 1:1, otherwise Plotly will automatically create a flattened chart which may mislead users.<br>
+Compared to our first submission, we change the main title, add a caption, change the background color, labeled every axis with associated units, and fix color encoding. In addition, we changed the position of the control buttons because they were too close to the x-axis. We draw two red dotted lines at x=105 and y=105 since the general occurring sex ratio is around 105 and the ratio is abnormal if it is much higher than 105. <br><br>
+</font> </p>
+<a id="method-mor"><h3 align="left">Mortality Rate</h3></a>
+		<p align="left"><font size="4">
+		Next, we consider the impact of income groups on under-five mortality. Combined with the population base of each country, how can we show the linear relationship between the level of national development and mortality? Based on the consideration of continuous variables, we use GDP per capita as the X-axis, and the Y-axis is the under-five mortality rate per 1,000 lives as shown in Figure-4. In addition, the size of the bubble indicates the number of deaths and the color of the bubble represents the four labels published by the World Bank(Hamadeh, Rompaey & Metreau, 2021), in order to reflect the population base and degree of development of each country. Different from the midpoint version, we changed Figure-4 to interactive one, which can better and more clearly know the rates, the number of deaths and level of income group contained in each bubble.<br><br>
+			
+	This is a new designed graph after the midpoint report. In Figure-5, we break down the comparison between men and women based on a combination of income groups and mortality rates. The Lollipop plot (Holtz, 2018) can well show the comparison of male and female infant mortality rates. The four graphs are high income, upper-middle-income, lower-middle-income, and low-income groups, respectively. The red dots represent women and the green dots represent men so that the straight lines between them can clearly show gender differences.<br><br>
+
+</font></p>
+			<a id="method-miss"><h3 align="left">Missing Female</h3></a>
+	<p align="left"><font size="4">Missing females include 1. prenatal sex selection, 2. after birth girls are neglected, abused, and even killed, and 3. as well as trafficking in women and forcing them to engage in sexual services and surrogacy. We will study the first two points and the third point in two parts.<br>
+				</font>
+</p>
+	<h4 align="left">- Prenatal and Postnatal Sex Selection</h4>
+			<p align="left"><font size="4">Since prenatal sex selection means that the baby has not yet been born, there is little data available. Therefore, specific information on prenatal sex selection can only be estimated from the sex ratio at birth in each country. The excess mortality rate of postpartum women is also very difficult to obtain actual statistics, so the data source is to estimate the sex ratio of 5 years old, that is, the sex ratio of children. The data source for Figure 6 below is the paper “Does Prenatal Sex Selection Substitute Postnatal Bias in Mortality? Decomposing the Fertility and Mortality Components of Changes in Child Sex Ratios”(Kashyap, 2018). From this Linked graph, it is very clear to see the situation of prenatal sex selection and postpartum excess female mortality in China, India, and other countries.
+<br>
+				</font>
+</p>
+	
+	<h4 align="left">- Trafficking Female</h4>
+			<p align="left"><font size="4">Then we will explore the third point. In Figures 7 and 8 below, I use data from the Counter Trafficking Data Collaborative (CTDC), the first global data center for human trafficking, to use a bar plot to show the age group and gender distribution of trafficked victims and the data from 2002 to The gender distribution of victims in 2019.<br><br>
+				We used a sunburst chart(Russell, 2021) to interactively show the main goals of trafficking both males and females over four targeted regions, Europe, Asia, America, and Africa as shown in Figure-9. This is a linked graph, combing the 3 pie (donut) graphs with variables Regions, Factors, and Sex. Audiences can start filtering from the inside circle. The innermost circle is the target continent, showing where the world's trafficking population is going in percentage form. We can then screen for the top three causes of trafficking, and again, the arc length represents the percentage. Each arc in the outermost circle denotes gender, and the difference between men and women can therefore be seen from its length. Click on an arc and the plot will automatically take the selected arc variable as Root (100%), and then it changes the following percentage when selecting.<br>
+				For the innovative view, we combine the radial bar chart and the world map to show the number of detected victims trafficked (hereafter referred to as “number of victims”) in 14 selected countries from 2003 to 2017. The world map is put inside the radial bar chart; each bar in the circle represents one country in a specific year, the length of the bar indicates the number of detected victims trafficked. Bars are colored by country. This view is innovative because it allows users to explore how the number of victims in a country has changed in two ways: click the gender symbol on the map or different legend items to filter.<br>Users can hide other countries by clicking on the associated legend item of the country they are interested in. However, the radial charts of some countries were dwarfed (and difficult to observe) by other countries (The United States, Spain for example) because the number of victims in these countries is too high. At this time, users can click on the country which they want to observe, and its radial bar chart will be enlarged: the bar indicates the number of victims in a country in a specific year, with 2003 starting at the bottom right and then going clockwise.
+
+
+				</font>
+</p>
+</div>
+</div>
+</div>
+
+</section>
+	
+	
+
+<section class="ftco-section ftco-section-more img" style="background-image: url(images/head3.jpg);">
+<div class="container">
+<div class="row justify-content-center mb-3 pb-3">
+<div class="col-md-12 heading-section ftco-animate">
+	<a id="viz"><h1 class="big" align="left"><p align="left">visualization</p>
+	<p align="center">&</p>
+	<p align="right">Storytelling</p></h1></a>
+<h2 align="left">Visualization </h2>
+	<h2 align="center">&</h2> 
+	<h2 align="right">Storytelling</h2>
+</div>
+</div>
+</div>
+</section>
+<section class="ftco-section testimony-section bg-light">
+<div class="container">
+<div class="row justify-content-center mb-3 pb-3">
+<div class="col-md-12 heading-section text-center ftco-animate">
+	<a id="viz-pop"><h2><strong>Population</strong></h2></a>
+	<br>
+	
+	
+	<a href="#" class="image featured"><img src="images/population.png" alt="" width="800" /></a>
+	<p>Figure-1: This slope chart gives a basic overview of world's population structure from 1990 to 2020 on a five-year basis. The number shown in each line denotes real absolute population in millions. Except Europe, every continent's population has been increasing in the last three decades, where Asia is on the top of others and has biggest increase.</p>
+	<p align="left"><font size="4">With datasets provided by the United Nations Population Division, Figure.1 depicts global population trends every five years from 1990 to 2020 by region level. Asia is firmly at the top of the list in terms of population, and the trend is rising fast from the largest base. Growth in Africa was also significant in the past 20 years, while Europe showed an unusual slight decline. Overall, the population of most parts of the world has been on the rise in the past decades.
+		<br><br>With basic world demographics in hand, we can take a closer look at the male-female ratio. Here we use sex ratio (at birth and under-five year) to show the proportion of men and women in the population.<br>
+
+
+</font></p>		
+		<br><br>
+	<br>
+	<h2><strong>Sex Ratio</strong></h2>
+	
+
+	<br><br>
+		<p align="center"><iframe src="images/Sex_ratio_by_age_five_year_olds.html" width="100%" height="600" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" allowtransparency="yes"></iframe></p>
+	<p>Figure-2: Map of Sex Ratio at Five Years old from 1960 to 2015. After 1995, the sex ratio in several Asian countries exceeded 110.</p>
+	
+	<p align="left"><font size="4">In fact, Gender Bias starts even from a person's birth, whether it's prenatal sex selection (abortion), which we'll talk about later, or postnatal abuse and even death of girls, and human trafficking. A very large part of these cases will be reflected in the sex ratio, corresponding to the sex ratio of newborns, the sex ratio of children, and the sex ratio of the general population.<br>
+As mentioned above, the natural birth sex ratio is about 105 males to 100 females. And take into account that there are important differences in under-5 survival rates for boys and girls. As Dr. Leontine said(Alkema, Chao, You, Pedersen, & Sawyer, 2014), girls' chances of survival tend to improve more quickly as overall mortality declines compared to boys, and this trend reverses when infant mortality is very low. Then the natural sex ratio of children should be less than 105 males to 100 females.<br>
+However, in Figure 2 above, we can see that the proportion of males in China and India in Asia has always been above 105, and even exceeded 110 after 1998. Due to the large period of the image, many factors affect the gender ratio, such as medical factors, huge natural disasters, wars, etc., which will have a huge impact on the gender ratio. Therefore, in the next Figure 3, we focus on the abnormal sex ratio of newborns and children in different countries in the past 30 years to facilitate better follow-up research.
+ 
+</font></p>
+	
+	
+	<br><br><hr>
+	<br><br>
+	<p align="center"><iframe src="images/sex_ratio_animation.html" width="80%" height="720" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" allowtransparency="yes"></iframe></p>
+	<p>Figure-3: Sex Ratio at Five Years old from 1950 to 2015. The general occuring sex ratio is around 105.</p>
+	
+	<p align="left"><font size="4">Overall, most countries in Europe, Oceania, South America, and North America have sex ratios around 105. Unlike other continents, the sex ratio at birth and children sex ratio for most of the countries in Africa has always been lower than 105. It is worth noting that Asia has very unusual sex ratios. Prior to 1980, the sex ratios at birth and children sex ratios in most Asian countries were around or below 105. Only few countries (Jordan, Kuwait, Macao, India) have high sex ratios at the age of 5. However, the sex imbalance at birth and children sex ratios in many Asian countries has become increasingly severe since 1980. In 2015, China had the highest sex ratio at birth and children sex ratio with almost 115 males per 100 females, followed by Azerbaijan, Armenia, India, and Vietnam. High ratios were mainly caused by strong son preference. Many Asian countries have much higher sex ratios due to the preference of birthing males as opposed to females. (Anderson, 2019) In the list of top 10 countries having the highest sex ratio at birth and children sex ratio, eight countries belong to Asia and two to Europe. Asia might have the world’s worst sex ratio inequality.  
+</font></p>
+
+</div>
+</div>
+</div>
+	</section>
+	
+	
+	
+
+	
+
+<div class="goto-here"></div>
+<section class="ftco-section">
+<div class="container">
+<div class="row justify-content-center mb-3 pb-3">
+<div class="col-md-12 heading-section text-center ftco-animate">
+
+<a id="viz-mor"><h2><strong>mortality rate</strong></h2></a>
+</div>
+</div>
+<br>
+	<p align="center"><iframe src="images/bubble.html" width="100%" height="720" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" allowtransparency="yes"></iframe></p>
+	<p align="middle">Figure-4: This interactive bubble plot shows how the degree of the developed level in the country will affect their under-five morality rates, where x-axis denotes GDP and y-axis represents under-five mortality rates. Each bubble size is the number of deaths and different colours mean different income groups defined by World Bank.</p>
+	<p align="left"><font size="4"><br>In Figure.4 we noticed that children continue to face widespread regional and income disparities in their chances of survival(https://www.unicef.org ). Not surprisingly, low-income countries continue to have the highest under-five mortality rate in the world, with an average of 90-120 deaths per 1000 live births. This risk is nearly 10 times higher than the average risk of children born in high-income countries. This suggests that although the burden of child mortality is unevenly distributed around the world, it is possible to improve child survival even in resource-constrained environments.</font></p>
+
+		
+	
+	<br><br><hr>
+	<br><br>
+	<p align="middle"><a href="#" class="image featured"><img src="images/lollipop.png" alt="" width="100%" /></a></p>
+	<p align="middle">Figure-5: High-income countries tend to have smaller gaps between female and male's infant mortality rates and situations have worsened in upper-middle income countries. Most lower-middle income countries are having serious gender bias. India is special as its two dots are closely located. Low-income countries have been suffering from a relatively severe discrepancy between gender's infant survival.</p>
+	<p align="left"><font size="4"><br>Each sub-plot in Figure.5 represents the infant mortality rate under the four classified income groups defined by the World Bank. High-income countries tend to have smaller gaps between female and male's infant mortality rates, except for several outliers such as Nauru, Palau, and Oman. Situations have worsened in upper-middle-income countries, Equatorial Guinea is still having significant gender bias. Most lower-middle-income countries are still having serious gender bias. Note that India is a special case since it has roughly a 1:1 infant mortality rate, but its population is way too larger than 1:1, the gender gap is particularly pronounced. On top of that, low-income countries have been suffering from a relatively severe discrepancy between genders' infant survival. <br><br>
+			Infant mortality rates in high-income countries are close to the ratio of male to female, however, the gap in low-income countries is more significant as the lines between two dots become longer. Hence we may conclude that income groups with lower GDP are more likely to have a greater gender difference specifically in infant mortality rates.
+</font></p>
+
+
+	
+</div>
+</section>
+
+<section class="ftco-section bg-light ftco-services">
+<div class="container">
+<div class="row justify-content-center mb-3 pb-3">
+<div class="col-md-12 heading-section text-center ftco-animate">
+<a id="viz-miss"><h2><strong>Missing Female</strong></h2></a>
+	<br>
+	<h4 align="left">- Prenatal and Postnatal Sex Selection</h4><br>
+	<p align="center"><iframe src="images/missing_women.html" width="85%" height="350" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" allowtransparency="yes"></iframe><br>
+	Figure-6: Annual number of missing female births and excess mortality.The figure reflects the excess mortality rate from 1980 to 2010 in selected countries where missing women have increased to varying degrees, especially China and India.</p>
+	
+	<p align="left"><font size="4"><br>Through the study of the sex ratio at birth and the sex ratio of children, and then estimated the Missing female births from 1980 to 2010, that is, women who should have been born but were not born due to prenatal sex selection; and the excess female mortality rate, which is the excess number of girls who die after birth. The broken line in the figure is divided into China, India and other countries including Vietnam, Cambodia, Kyrgyzstan, Armenia, Georgia, Iran, Egypt, Nigeria, Malawi, Nigeria, South Korea, Pakistan, Nepal, and Azerbaijan. All of the above countries have at least one of the two values above 0, but India and China are highlighted separately because both values in these two countries are much higher than in other countries, where India's prenatal sex selection and postpartum women's Excess mortality is far ahead, and China's prenatal sex selection even exceeded 1.7 million in 2010. It is for this reason that the gender ratios of these selected countries are above 115 or even 110 (male): 100 (female) as mentioned above.<br><br>
+And as John said, the projections from 2010 to 2050 are based on estimates of excess female deaths prior to 2010 and missing female births, both of which are expected to continue to rise. (Bongaarts & Guilmoto, 2015)Although the natural birth rate of women is lower than that of men, the average survival rate is higher than that of men. But women are increasingly disadvantaged in the sex ratio due to factors such as sex-selective abortion, female infanticide, and inadequate health care and nutrition for girls. (Sen, 2003)The imbalance of gender ratio will bring more social problems and enter a vicious circle.
+</font></p>
+	<br>
+	<br><br>
+	<h4 align="left">- Trafficking Female</h4>
+	<p align="left"><font size="4">The studies in the previous section focused on gender bias in neonates and children. Next, we'll explore the sexism and even life-threatening consequences for teenage and adult women.<br><br>
+</font></p>
+	<p align="center"><iframe src="images/Victims_Age_and_Gender_Distribution.html" width="800" height="590" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" allowtransparency="yes"></iframe></p>
+	<p align="middle">Figure-7: Victims Age and Gender Distribution. It can be seen from the figure that the proportion of female victims is very high.</p>
+	<p align="middle"><a href="#" class="image featured"><img src="images/trafficking_gender.png" alt="" width="800" /></a></p>
+	<p align="middle">Figure-8: Victims Gender Distribution.This figure shows 2016 was the year with the highest number of buyers, and it gradually flattened out.</p>
+	
+	<p align="left"><font size="4"><br>It can be seen from Figure 7 that red represents far more women than men, which means that the vast majority of victims of human trafficking are women. And about one in five victims are children. Apart from children, the main age groups of victims of trafficking are between the 18-20 and 30-38 age groups.
+
+</font></p>
+		
+		<p align="left"><font size="4">
+From Figure 8 above, it can also be seen that the number of trafficked women is much higher than that of men, and the peak of human trafficking seems to be in 2016, and the number of victims has decreased significantly after 2016.<br>
+Hence we see that "although boys and men are victims as well, the majority of individuals identified as trafficked for both labor and commercial sex are women and girls (U.S. Department of State, 2006). ” Among them, “Trafficked women and girls encounter high rates of physical and sexual violence, including homicide and torture, psychological abuse, horrific work and living conditions, and extreme deprivation while in transit.”</font></p>
+<br><br><hr><br><br>
+	
+	<p align="center"><iframe src="images/sunburst.html" width="80%" height="580" frameborder="no" border="0" marginwidth="0" marginheight="0" scrolling="no" allowtransparency="yes"></iframe><br>Figure-9: This linked sunburst plot shows the main destination (continent level) and purpose of trafficked people</p>
+	
+	<p align="left"><font size="4">The linked plot Figure-9 has shown the inter-relationship among regions, trafficking purposes ,and gender. From the innermost circle, most of the destination of trafficking is the Americas, followed by Europe, so we may tell that the main circulation of trafficking is still in the developed regions. So, there is a difference between Africa and the other three continents. In Africa, the main factor in human trafficking is forced labor, with males accounting for the majority. In Europe, America, and Asia, sexual exploitation is the leading cause of human trafficking, and sadly it is overwhelmingly female. In America, 96% of women are trafficked because of sexual exploitation. Overall, though the situation in Africa is different, we can see that women still face significant and unequal exploitation in human trafficking. More than 70 percent of all trafficked people worldwide are women.
+</font></p>
+	<br><br><hr><br><br>
+
+	<div class='tableauPlaceholder' id='viz1652047867512' style='position: relative'><noscript><a href='#'><img alt='Dashboard 1 ' src='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ve&#47;Ver5-7&#47;Dashboard1&#47;1_rss.png' style='border: none' /></a></noscript><object class='tableauViz'  style='display:none;'><param name='host_url' value='https%3A%2F%2Fpublic.tableau.com%2F' /> <param name='embed_code_version' value='3' /> <param name='site_root' value='' /><param name='name' value='Ver5-7&#47;Dashboard1' /><param name='tabs' value='no' /><param name='toolbar' value='yes' /><param name='static_image' value='https:&#47;&#47;public.tableau.com&#47;static&#47;images&#47;Ve&#47;Ver5-7&#47;Dashboard1&#47;1.png' /> <param name='animate_transition' value='yes' /><param name='display_static_image' value='yes' /><param name='display_spinner' value='yes' /><param name='display_overlay' value='yes' /><param name='display_count' value='yes' /><param name='language' value='en-US' /><param name='filter' value='publish=yes' /></object></div>                <script type='text/javascript'>                    var divElement = document.getElementById('viz1652047867512');                    var vizElement = divElement.getElementsByTagName('object')[0];                    if ( divElement.offsetWidth > 800 ) { vizElement.style.width='1050px';vizElement.style.height='1147px';} else if ( divElement.offsetWidth > 500 ) { vizElement.style.width='1050px';vizElement.style.height='1147px';} else { vizElement.style.width='100%';vizElement.style.height='727px';}                     var scriptElement = document.createElement('script');                    scriptElement.src = 'https://public.tableau.com/javascripts/api/viz_v1.js';                    vizElement.parentNode.insertBefore(scriptElement, vizElement);                </script>
+	
+			<p align="middle">Figure-10: The innovative tableau view.Many females in developed countries still face unequal exploitation. Serious human trafficking in Europe and the United States may represent the potential gender inequality, although there was nothing unusual about their sex ratios at birth and children's sex ratios. (0 means the data for that year is missing. )</p>
+			
+			
+	<p align="left"><font size="4"><br>Previously we mentioned that gender inequality can skew a country’s sex ratio. In other words, countries with high sex ratios and female infant mortality rates have the potential for serious gender inequality. Does that mean the area with a normal or low sex ratio has no gender inequality? The answer is “not really”.<br> 
+	From <strong>the innovative tableau view</strong> above, we can see how the number of detected victims trafficked (both sexes) in 14 selected countries from 2003 to 2017. As Figure-9 mentioned, most of all trafficking victims worldwide are females. Although Figure-10 contains data of human trafficking victims in both sexes, the vast majority of victims are females and were trafficked for sexual exploitation, and we are still able to explore potential gender inequality in these countries from this figure. Some developed countries in Europe (Germany, Italy, United Kingdom, etc.) and North America (United States) are selected because they have a large number of female trafficking cases in 2018. We would like to see how their number of victims of people trafficking has changed over the years. <br>
+	 For years, according to Figure-3, the sex ratio at birth and five-year-old for Viet Nam has reached as high as 110. Not surprisingly, gender inequality is particularly severe in this country, and human trafficking is its one of the biggest problems. It can be seen from Figure-10 that hundreds and thousands of Vietnamese, especially females, are sold each year. Vietnam has the 3rd highest gender birth imbalance in the world, according to Vietnam’s General Statistics Office. Undervaluing women is common in their society and begins before birth. (Vu, 2021)<br>
+What about developed countries? Human trafficking has long been a serious problem in Europe. Every year thousands of people in Europe are trafficked to different places. Human trafficking in Spain between 2003 and 2008 was astonishingly high, but it has been significantly decreasing in recent years. The situation is grim in the United States: the number of victims increased dramatically to nearly 5600 in 2016 from 469 in 2012. Although the sex ratios at birth and children sex ratios are pretty balance in America and Europe, gender inequality still exists, and females still face unequal exploitation.<br>
+It is worth noting that some countries have a smaller number of victims because they have fewer populations. Also, this is only the number of “detected” victims, the actual number will be far higher.<br>
+
+</font></p>
+	
+	
+	
+	
+	
+</div>
+</div>
+	</div>
+	
+	
+	
+
+	
+</section>
+<div class="goto-here"></div>
+<section class="ftco-section ftco-product">
+<div class="container">
+<div class="row justify-content-center mb-3 pb-3">
+<div class="col-md-12 heading-section text-center ftco-animate">
+<h1 class="big">Conclusion</h1>
+<a id="con"><h2 class="mb-4">Conclusion</h2></a>
+	<br><br><br>
+	<p align="left"><font size="4">These studies, using both quantitative and qualitative data, suggested that in countries in Asia, such as China and India, males account for the majority in sex ratio (110:100) and prenatal gender selection bias is more serious. Infant mortality rates are more related to the degree of countries’ developed level, which is very reasonable as the country's economy, health care, and education will directly influence citizens’ chances of survival, education level ,and their ideology so as to reduce the risk of gender discrimination. Consequently, infant mortality rates of boys and girls tend to be closer to 1:1 in those high-income countries. In addition, we found that developed countries are facing a serious problem of human trafficking. Some less developed countries, such as Peru, the Philippines, Vietnam ,and Myanmar, are the most severely trafficked areas. Sexual exploitation is the leading factor (63%), with the Americas being the main destination and, sadly 96% of victims are female. The crime of trafficking women enslaving, instrumentalizing ,and commercializing women, is definitely modern slavery shrouded in civilization. As many women are still struggling in the shadows, we are hoping to focus on women who suffer from unequal treatment even from birth, women who are regarded as "commodities" for sale and purchase, women who are deprived of their freedom, dignity ,and rights, and women who are "disappeared" and "silenced".
+</font> </p>
+
+</div>
+</div>
+</div>
+
+	
+	
+</section>
+	
+	
+	
+	
+<footer class="ftco-footer bg-light ftco-section">
+<div class="container">
+<div class="row mb-5">
+<div class="col-md">
+<div class="ftco-footer-widget mb-4">
+<h2 class="ftco-heading-2"></h2>
+<h1 class="big" align="center">Acknowledgments</h1>
+
+<p align="left"><font size="4">We would like to recognize the invaluable assistance of Professor James Hickman, Professor Marck Vaisman, and Professor Abhijit Dasgupta. Your insightful feedback pushed us to sharpen our thinking and brought this work to a higher level. This project also thanks the World Bank, World Health Organization, United Nations Children's Fund and Counter Trafficking Data Collaborative for their support in the data. We have had tremendous respect for their extraordinary contribution in helping gender issues. We are clearly aware that behind every abducted and trafficked population data point is an unfortunate individual and a broken family, for which we express infinite sympathy. Therefore, we have completed this project with a fair and impartial attitude from beginning to end, hoping to make a slight contribution to gender discrimination.
+</font> </p>
+
+<br><br>
+	<br><br>
+	<p align="left"><font size="6">Reference: </font></p>
+<p align="left">
+
+Abbasi, M. (2021, November 30). India reports having more women than men now , but how true can this be? Home -. Retrieved May 8, 2022, from https://theindiaobserver.com/india-reports-having-more-women-than-men-now-but-how-true-can-this-be/ 
+<br>Alkema, L., Chao, F., You, D., Pedersen, J., & Sawyer, C. C. (2014). National, regional, and global sex ratios of infant, child, and under-5 mortality and identification of countries with outlying ratios: A systematic assessment. The Lancet Global Health, 2(9). https://doi.org/10.1016/s2214-109x(14)70280-3 American Psychological Association. (n.d.). Facts about trafficking of women and girls. American Psychological Association. Retrieved May 8, 2022, from https://www.apa.org/advocacy/interpersonal-violence/trafficking-women-girls 
+<br>Anderson, K. (2019, September 16). What are the consequences of a skewed sex ratio? Medium. Retrieved May 8, 2022, from https://medium.com/information-expositions-f2019/what-are-the-consequences-of-a-skewed-sex-ratio-1f66b9045308 
+<br>Bongaarts, J., & Guilmoto, C. Z. (2015). How many more missing women? excess female mortality and prenatal sex selection, 1970-2050. Population and Development Review, 41(2), 241–269. https://doi.org/10.1111/j.1728-4457.2015.00046.x 
+<br>Costa, J. C., da Silva, I. C., & Victora, C. G. (2017). Gender bias in under-five mortality in low/middle-income countries. BMJ Global Health, 2(2). https://doi.org/10.1136/bmjgh-2017-000350 
+<br>Hamadeh, N., Rompaey, C.V., & Metreau, E. (2021). New World Bank country classifications by Income Level: 2021-2022. World Bank Blogs. Retrieved May 8, 2022, from https://blogs.worldbank.org/opendata/new-world-bank-country-classifications-income-level-2021-2022 
+<br>Holtz, Y. (2018.). Lollipop chart with 2 groups. – the R Graph Gallery. Retrieved May 8, 2022, from https://r-graph-gallery.com/303-lollipop-plot-with-2-values.html 
+<br>Kashyap, R. (2018). Is prenatal sex selection associated with lower female child mortality? Population Studies, 73(1), 57–78. https://doi.org/10.1080/00324728.2018.1442583 
+<br>Reville, W. (2021, October 7). There is an unequal human sex ratio of males to females at birth. The Irish Times. Retrieved May 8, 2022, from https://www.irishtimes.com/news/science/there-is-an-unequal-human-sex-ratio-of-males-to-females-at-birth-1.4684931 
+<br>Russell, K. (2021, September 19). Sunburst 2.0.0. Retrieved May 8, 2022, from https://cran.r-project.org/web/packages/sunburstR/vignettes/sunburst-2-0-0.html 
+<br>Sen, A. (2003). Missing women--revisited. BMJ, 327(7427), 1297–1298. https://doi.org/10.1136/bmj.327.7427.1297 
+<br>United States Department of State, Human Smuggling and Trafficking Center. (2006). Fact sheet: Distinctions between human smuggling & human trafficking. Retrieved from http://www.state.gov/documents/organization/90541.pdf
+<br>Vu, M. (2021). Gender discrimination in Vietnam fuels human trafficking. news.trust.org. Retrieved May 8, 2022, from https://cms.trust.org/item/20210301101717-gtrmv/ 
+<br>Zarulli, V., Barthold Jones, J. A., Oksuzyan, A., Lindahl-Jacobsen, R., Christensen, K., &amp; Vaupel, J. W. (2018). Women live longer than men even during severe famines and epidemics. Proceedings of the National Academy of Sciences, 115(4). https://doi.org/10.1073/pnas.1701535115
+<br>
+
+
+
+</font></p>
+</div>
+</div>
+</div>
+</div>
+<div class="row">
+<div class="col-md-12 text-center">
+
+</div>
+</div>
+
+</footer>
+
+<div id="ftco-loader" class="show fullscreen"><svg class="circular" width="48px" height="48px"><circle class="path-bg" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke="#eeeeee" /><circle class="path" cx="24" cy="24" r="22" fill="none" stroke-width="4" stroke-miterlimit="10" stroke="#F96D00" /></svg></div>
+<script src="js/jquery.min.js"></script>
+<script src="js/jquery-migrate-3.0.1.min.js"></script>
+<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/jquery.easing.1.3.js"></script>
+<script src="js/jquery.waypoints.min.js"></script>
+<script src="js/jquery.stellar.min.js"></script>
+<script src="js/owl.carousel.min.js"></script>
+<script src="js/jquery.magnific-popup.min.js"></script>
+<script src="js/aos.js"></script>
+<script src="js/jquery.animateNumber.min.js"></script>
+<script src="js/bootstrap-datepicker.js"></script>
+<script src="js/scrollax.min.js"></script>
+<script src="https://ditu.google.cn/maps/api/js?key=AIzaSyBVWaKrjvy3MaE7SQ74_uJiULgl1JY0H2s&sensor=false"></script>
+<script src="js/google-map.js"></script>
+<script src="js/main.js"></script>
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-23581568-13"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-23581568-13');
+</script>
+</body>
+</html>
